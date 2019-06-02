@@ -111,8 +111,6 @@
 		535444060D634A47002A6C47 /* BXInvocationRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5321F8340CF77FFB00E663CE /* BXInvocationRecorder.m */; };
 		535444070D634A47002A6C47 /* BXInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5321F83C0CF7807700E663CE /* BXInvocation.m */; };
 		535444090D634A47002A6C47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
-		5354440A0D634A47002A6C47 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DBE8010B666C3B00C3D20A /* libcrypto.dylib */; };
-		5354440B0D634A47002A6C47 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DBE8120B666C7900C3D20A /* libssl.dylib */; };
 		5354440C0D634A47002A6C47 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531266E40B68F9CA00637EDA /* Security.framework */; };
 		5354F7DE0F00417400422613 /* BXURLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 5354F7DC0F00417400422613 /* BXURLEncoding.h */; };
 		5354F7DF0F00417400422613 /* BXURLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354F7DD0F00417400422613 /* BXURLEncoding.m */; };
@@ -235,7 +233,6 @@
 		538334DA0F0405F50040368E /* BXDatabaseObject+PGTSResultRowProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 538334D80F0405F50040368E /* BXDatabaseObject+PGTSResultRowProtocol.h */; };
 		538334DB0F0405F50040368E /* BXDatabaseObject+PGTSResultRowProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 538334D90F0405F50040368E /* BXDatabaseObject+PGTSResultRowProtocol.m */; };
 		538678D40DE31BA0000C9A78 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538678D30DE31BA0000C9A78 /* IOKit.framework */; };
-		538679880DE31C1D000C9A78 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 538679870DE31C1D000C9A78 /* libstdc++.6.dylib */; };
 		53877E930E26AE920097C35F /* NSEntityDescription+BXPGAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 53877E910E26AE920097C35F /* NSEntityDescription+BXPGAdditions.h */; };
 		53877E940E26AE920097C35F /* NSEntityDescription+BXPGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 53877E920E26AE920097C35F /* NSEntityDescription+BXPGAdditions.m */; };
 		53877E990E26B3F00097C35F /* NSAttributeDescription+BXPGAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 53877E970E26B3F00097C35F /* NSAttributeDescription+BXPGAdditions.h */; };
@@ -942,9 +939,6 @@
 			files = (
 				998877B719CD543F00272827 /* libpq.a in Frameworks */,
 				9954EE7319B9D57E00B29D98 /* libpcre.dylib in Frameworks */,
-				5354440A0D634A47002A6C47 /* libcrypto.dylib in Frameworks */,
-				5354440B0D634A47002A6C47 /* libssl.dylib in Frameworks */,
-				538679880DE31C1D000C9A78 /* libstdc++.6.dylib in Frameworks */,
 				539506F211CFAFBA0049F36C /* AppKit.framework in Frameworks */,
 				53E8522611CE2D7700588B12 /* CoreServices.framework in Frameworks */,
 				535444090D634A47002A6C47 /* Foundation.framework in Frameworks */,
@@ -2611,7 +2605,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -2647,7 +2640,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -2688,15 +2680,15 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(BUILT_PRODUCTS_DIR)",
-					"\"/usr/local/ssl/macos-x86_64/include\"/**",
+					"$(SRCROOT)/Contrib/libpq/include",
 				);
 				INFOPLIST_FILE = Resources/Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					.,
 					"$(BUILT_PRODUCTS_DIR)",
-					"\"/usr/local/ssl/macos-x86_64/lib\"",
+					"$(SRCROOT)/Contrib/libpq/lib",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MACOSX_DEPLOYMENT_TARGET_i386 = 10.8;
 				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.8;
 				OTHER_LDFLAGS = (
@@ -2747,7 +2739,7 @@
 					"$(BUILT_PRODUCTS_DIR)",
 					"\"/usr/local/ssl/macos-x86_64/lib\"",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MACOSX_DEPLOYMENT_TARGET_i386 = 10.8;
 				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.8;
 				OTHER_LDFLAGS = (

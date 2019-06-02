@@ -162,7 +162,8 @@ typedef struct ossl_data {
     
     // Step 1: Convert the X509_STORE_CTX into a SecCertificate.
     bzero(&certData, sizeof(certData));
-    certData.Length = i2d_X509(((X509_STORE_CTX*)x509_ctx)->cert, &(certData.Data));
+    X509 *cert = X509_STORE_CTX_get_current_cert(x509_ctx);
+    certData.Length = i2d_X509(cert, &(certData.Data));
     if (certData.Length > 0)
     {
         NSData *certNSData = [[NSData alloc] initWithBytes:certData.Data length:certData.Length];
@@ -259,7 +260,8 @@ error:
     
     // Step 1: Convert the X509_STORE_CTX into a SecCertificate.
     bzero(&certData, sizeof(certData));
-    certData.Length = i2d_X509(x509_ctx->cert, &(certData.Data));
+    X509 *cert = X509_STORE_CTX_get_current_cert(x509_ctx);
+    certData.Length = i2d_X509(cert, &(certData.Data));
     if (certData.Length > 0)
     {
         NSData *certNSData = [[NSData alloc] initWithBytes:certData.Data length:certData.Length];

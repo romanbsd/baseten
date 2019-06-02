@@ -24,7 +24,7 @@
 #import "BXPGPredefinedFunctionExpressionValueType.h"
 #import "BXEnumerate.h"
 #import <map>
-#import <tr1/unordered_map>
+#import <unordered_map>
 #import <stdarg.h>
 
 
@@ -40,7 +40,7 @@ public:
 	NSInteger argumentCardinality (NSInteger idx) const;
 };
 
-typedef std::tr1::unordered_map <SEL, bx_function_cardinality_st> SelectorCardinalityMap;
+typedef std::unordered_map <SEL, bx_function_cardinality_st> SelectorCardinalityMap;
 
 NSInteger 
 bx_function_cardinality_st::argumentCardinality (NSInteger idx) const
@@ -152,7 +152,7 @@ end:
 		arguments = (id) [[arguments BX_Collect] expressionSQL: visitor];
 		[invocation setArgument: &arguments atIndex: 2];
 	}
-	else if (0 < function->fc_arguments)
+	else if (nullptr != function->fc_arguments)
 	{
 		NSArray* arguments = [valueType arguments]; 
 		for (NSUInteger i = 0, count = [arguments count]; i < count; i++)
