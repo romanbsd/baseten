@@ -496,7 +496,12 @@
 
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		089C1667FE841158C02AAC07 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3045198522A3E95E005FBE85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Base.lproj/WaitForNetworkWindow.nib; sourceTree = "<group>"; };
+		3045198622A3E95E005FBE85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Base.lproj/ConnectUsingBonjourView.nib; sourceTree = "<group>"; };
+		3045198722A3E95E005FBE85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Base.lproj/ConnectByHostnameView.nib; sourceTree = "<group>"; };
+		3045198822A3E95E005FBE85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Base.lproj/AuthenticationView.nib; sourceTree = "<group>"; };
+		3045198922A3E95E005FBE85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Base.lproj/MessageView.nib; sourceTree = "<group>"; };
+		3045198A22A3E961005FBE85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5301300B09D437030037C485 /* BXDatabaseContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = BXDatabaseContext.h; path = Sources/BXDatabaseContext.h; sourceTree = "<group>"; };
 		5301300C09D437030037C485 /* BXDatabaseContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BXDatabaseContext.m; path = Sources/BXDatabaseContext.m; sourceTree = "<group>"; };
 		5301302609D43A450037C485 /* BXConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = BXConstants.h; path = Sources/BXConstants.h; sourceTree = "<group>"; };
@@ -866,11 +871,6 @@
 		9916DF701B0F72AC00066D25 /* BXObjectStatusToEditableTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BXObjectStatusToEditableTransformer.h; path = Sources/BXObjectStatusToEditableTransformer.h; sourceTree = "<group>"; };
 		9916DF711B0F72AC00066D25 /* BXObjectStatusToEditableTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BXObjectStatusToEditableTransformer.m; path = Sources/BXObjectStatusToEditableTransformer.m; sourceTree = "<group>"; };
 		9916DF741B0F72AC00066D25 /* BaseTenAppKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseTenAppKit.h; path = Sources/BaseTenAppKit.h; sourceTree = "<group>"; };
-		9916DF771B0F72AC00066D25 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/WaitForNetworkWindow.nib; sourceTree = "<group>"; };
-		9916DF791B0F72AC00066D25 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ConnectUsingBonjourView.nib; sourceTree = "<group>"; };
-		9916DF7B1B0F72AC00066D25 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ConnectByHostnameView.nib; sourceTree = "<group>"; };
-		9916DF7D1B0F72AC00066D25 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/AuthenticationView.nib; sourceTree = "<group>"; };
-		9916DF7F1B0F72AC00066D25 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MessageView.nib; sourceTree = "<group>"; };
 		9916DF8A1B0F72AC00066D25 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		9916DF8B1B0F72AC00066D25 /* SecurityInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityInterface.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/SecurityInterface.framework; sourceTree = "<absolute>"; };
 		9916DFC91B0F825700066D25 /* BXDatabaseContextPrivateARC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BXDatabaseContextPrivateARC.h; sourceTree = "<group>"; };
@@ -2158,10 +2158,10 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 1020;
 				TargetAttributes = {
 					535443BB0D634A47002A6C47 = {
-						DevelopmentTeam = YEGP45DNY9;
+						DevelopmentTeam = D6BCY2PLWC;
 					};
 					9916DF2E1B0F727E00066D25 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -2176,10 +2176,11 @@
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "BaseTen" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* BXDatabase */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
@@ -2541,7 +2542,7 @@
 		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				089C1667FE841158C02AAC07 /* InfoPlist.strings */,
+				3045198A22A3E961005FBE85 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -2549,7 +2550,7 @@
 		9916DF781B0F72AC00066D25 /* WaitForNetworkWindow.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9916DF771B0F72AC00066D25 /* English */,
+				3045198522A3E95E005FBE85 /* Base */,
 			);
 			name = WaitForNetworkWindow.nib;
 			sourceTree = "<group>";
@@ -2557,7 +2558,7 @@
 		9916DF7A1B0F72AC00066D25 /* ConnectUsingBonjourView.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9916DF791B0F72AC00066D25 /* English */,
+				3045198622A3E95E005FBE85 /* Base */,
 			);
 			name = ConnectUsingBonjourView.nib;
 			sourceTree = "<group>";
@@ -2565,7 +2566,7 @@
 		9916DF7C1B0F72AC00066D25 /* ConnectByHostnameView.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9916DF7B1B0F72AC00066D25 /* English */,
+				3045198722A3E95E005FBE85 /* Base */,
 			);
 			name = ConnectByHostnameView.nib;
 			sourceTree = "<group>";
@@ -2573,7 +2574,7 @@
 		9916DF7E1B0F72AC00066D25 /* AuthenticationView.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9916DF7D1B0F72AC00066D25 /* English */,
+				3045198822A3E95E005FBE85 /* Base */,
 			);
 			name = AuthenticationView.nib;
 			sourceTree = "<group>";
@@ -2581,7 +2582,7 @@
 		9916DF801B0F72AC00066D25 /* MessageView.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9916DF7F1B0F72AC00066D25 /* English */,
+				3045198922A3E95E005FBE85 /* Base */,
 			);
 			name = MessageView.nib;
 			sourceTree = "<group>";
@@ -2592,7 +2593,33 @@
 		1DEB91B208733DA50010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2602,6 +2629,32 @@
 		1DEB91B308733DA50010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
 			};
@@ -2611,11 +2664,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D6BCY2PLWC;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -2660,11 +2715,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D6BCY2PLWC;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_C_LANGUAGE_STANDARD = c99;
